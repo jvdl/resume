@@ -3,6 +3,7 @@ import { Chevron } from './icons/Chevron';
 import { AtSymbol } from './icons/AtSymbol';
 import { LinkedIn } from './icons/LinkedIn';
 import './App.css'
+import { GitHub } from './icons/GitHub';
 
 function App() {
 
@@ -41,6 +42,13 @@ function App() {
         </section>
 
         <section>
+          <h2>Location Preference</h2>
+          <ul>
+            <li>Remote</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>Languages</h2>
           <ul>
             <li>English</li>
@@ -57,6 +65,7 @@ function App() {
           <ul>
             <li><AtSymbol /><a href="mailto:jvanderloo@gmail.com">jvanderloo@gmail.com</a></li>
             <li><LinkedIn /><a href="https://www.linkedin.com/in/jvanderloo" target="_blank" rel="noreferrer">LinkedIn</a></li>
+            <li><GitHub /><a href="https://github.com/jvdl" target="_blank" rel="noreferrer">GitHub</a></li>
           </ul>
         </header>
 
@@ -67,9 +76,9 @@ function App() {
             that help make the world a better place.
           </p>
           <p>
-            I specialize in JavaScript, TypeScript, CSS, and HTML, and React.
-            Using my skills and experience, I focus on accessibility, usability, and user experience to build solutions that make a positive impact.
-            I am passionate about working on projects that help developer and team productivity, and I always aim to remain adaptable and flexible.
+            I specialize in <b>JavaScript</b>, <b>TypeScript</b>, <b>CSS</b>, <b>HTML</b>, and <b>React</b>.
+            Using my skills and experience, I focus on <b>accessibility</b>, <b>usability</b>, and <b>user experience</b> to build solutions that make a positive impact.
+            I am passionate about working on projects that help <b>developer and team productivity</b>, and I always aim to remain <b>adaptable</b> and <b>flexible</b>.
             I have experience working in a wide variety of environments and tech stacks, and I am always eager to take on new challenges and expand my skill set.
             </p>
         </section>
@@ -87,19 +96,17 @@ function App() {
               <p className="role-location">New South Wales, Australia</p>
               <ul>
                 <li>
-                  Lead the migration from Webpack to Vite.
-                  This resulted in a significantly shorter devloop and brought the project up to modern standards.
+                  <b>Led migration</b> from Webpack to Vite, reducing build times and the developer feedback loop. Modernizing the tech stack to <b>improve team productivity</b>.
                 </li>
-                <li>Started a new Playwright e2e setup to improve testing capabilities and move away from a legacy Selenium setup.</li>
-                <li>Improvements to and migration of CI/CD pipelines. </li>
-                <li>Driving migration to Vitest to improve our overall testing strategy and modernize our testing approach.</li>
+                <li>Recognized gaps in <b>end-to-end testing</b> coverage. Architected and implemented a new <b>Playwright</b> e2e test suite, replacing legacy Selenium setup to <b>increase test reliability</b> and reduce manual QA burden.</li>
+                <li><b>Streamlined CI/CD infrastructure</b> by <b>improving processes</b> and migrating pipelines, reducing deployment failures and <b>increasing release confidence</b>.</li>
+                <li>Drove migration to <b>Vitest</b>, establishing a modern, unified <b>testing strategy</b> that improved test execution speed and <b>developer experience</b>.</li>
                 <li>
-                  Started a new admin application to administer our SaaS app's configuration and resources.
-                  This reduced manual effort for maintenance and support and significantly reduced risky operations previously done by manually accessing the production database.</li>
+                  Eliminated risky manual database operations by building a new admin application for SaaS configuration and resource management. Reduced operational overhead and <b>significantly decreased production incident risk</b>.
+                </li>
                 <li>
-                  Implemented an updated analytics client that used a fully typed schema to allow for full visibility of analytics events and data.
-                  This made it easier to understand all the available events and the data structure sent by those events.
-                  </li>
+                  Resolved lack of <b>visibility into analytics data</b> by implementing a fully typed analytics client schema. Enabled teams to clearly understand available events and data structures, <b>improving data quality</b> and <b>analytics reliability</b>.
+                </li>
               </ul>
             </div>
           </article>
@@ -113,8 +120,9 @@ function App() {
               </div>
               <p className="role-location">New South Wales, Australia</p>
               <ul>
-                <li>Working on the frontend for Whispli's core application that facilitates secure and anonymous communication for whistleblowers and organizations</li>
-                <li>Large legacy codebase being transformed to a more modern stack whilst keeping existing functionality active</li>
+                <li>Rapidly ramped up on a large legacy codebase and domain knowledge to contribute meaningfully within weeks</li>
+                <li>Led modernization efforts that <b>increased testing surface</b>, enabling faster feature delivery by reducing manual testing effort.</li>
+                <li>Collaborated on the secure communication platform serving whistleblowers and organizations, ensuring reliability and data integrity.</li>
               </ul>
             </div>
           </article>
@@ -128,9 +136,9 @@ function App() {
               </div>
               <p className="role-location">New South Wales, Australia</p>
               <ul>
-                <li>Spearheaded Pathzero's design system, "Terra", and set it up for success. This allowed the team to build features faster with a more consistent user experience.</li>
-                <li>Lead the frontend development efforts, including architecture, code quality, and best practices.</li>
-                <li>Greenfield projects as well as legacy project maintenance and improvements</li>
+                  <li>Spearheaded Pathzero's <b>design system</b> and set it up for success, enabling the team to build features faster with a more <b>consistent user experience</b> across the platform.</li>
+                  <li>Led frontend development efforts <b>establishing architecture standards</b> and <b>code quality practices</b> that reduced bugs and improved team velocity.</li>
+                  <li>Managed greenfield projects and legacy modernization initiatives that improved application performance and reduced technical debt, resulting in faster feature delivery and improved user satisfaction.</li>
               </ul>
             </div>
             <div className="role">
@@ -140,10 +148,9 @@ function App() {
               </div>
               <p className="role-location">Sydney, New South Wales, Australia</p>
               <ul>
-                <li>Stepped up into an Engineering Manager role as the team grew and split into multiple teams</li>
-                <li>Responsible for running the "Customer Journey" team, overseeing UX and usability improvements within the core application</li>
-                <li>Expanded remit to create and develop the in-house design system "Terra", including standards, guidelines, and peripheral tooling</li>
-                <li>Returned to an individual contributor role once the team had grown again — which happened after ~5 months</li>
+                <li>Led the "Customer Journey" team, <b>driving UX and usability improvements</b> across the core application</li>
+                <li>Established and developed the design system with <b>standards, guidelines, and tooling</b> to improve team efficiency</li>
+                <li>Transitioned back to individual contributor as organizational needs evolved</li>
               </ul>
             </div>
             <div className="role">
@@ -153,7 +160,10 @@ function App() {
               </div>
               <p className="role-location">New South Wales, Australia</p>
               <ul>
-                <li>Making the world a little greener over at Pathzero, an easy to use carbon communications platform</li>
+                <li>Made the world a little greener at Pathzero, an easy to use carbon communications platform</li>
+                <li>Quickly ramped up on <b>Vue.js</b> and <b>GraphQL</b> while maintaining <b>high code quality standards</b></li>
+                <li>Implemented <b>responsive UI components</b> and improved application performance</li>
+                <li>Collaborated with design and backend teams to deliver cohesive features across the stack</li>
               </ul>
             </div>
           </article>
@@ -168,9 +178,9 @@ function App() {
               </div>
               <ul>
                 <li>Primarily worked on Bitbucket Server, building features including diff/source views, pull requests, admin/settings pages, and code editing</li>
-                <li>Built an in-house tool for code quality enforcement</li>
-                <li>Drove the transition to more modern JS and transformed large parts of the codebase using jscodeshift</li>
-                <li>Secondment to the Design System team to represent the broader team's interests</li>
+                <li>Built an in-house tool for <b>code quality enforcement</b></li>
+                <li><b>Drove the transition</b> to more modern JS and transformed large parts of the codebase using <b>jscodeshift</b></li>
+                <li>Secondment to the <b>Design System</b> team to represent the broader team's interests</li>
               </ul>
             </div>
           </article>
@@ -330,7 +340,7 @@ function App() {
           </article>
         </section>
 
-        <section className="resume-section">
+        <section className="resume-section education">
           <h2>Education</h2>
 
           <article className="education-entry role">

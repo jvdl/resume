@@ -31,6 +31,7 @@
   -moz-osx-font-smoothing: grayscale;
   interpolate-size: allow-keywords;
   transition-behavior: allow-discrete;
+  text-wrap: pretty;
 
   @media (max-width: 1024px) {
     font-size: 16px;
@@ -58,6 +59,9 @@
   }
 }
 
+b {
+  font-weight: 600;
+}
 
 #root {
   width: 1126px;
