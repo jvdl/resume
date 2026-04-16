@@ -108,14 +108,16 @@
       display: inline-flex;
       align-items: center;
       gap: 4px;
+      white-space: nowrap;
 
       .icon {
         color: var(--accent);
-        width: 14px;
-        height: 14px;
-
+        width: 16px;
+        height: 16px;
+        margin-top: 1px;
       }
     }
+
   }
 
   @container (width < 500px) {
@@ -344,7 +346,7 @@ details {
 
 /* ── Responsive ───────────────────────────────────────────── */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .resume {
     grid-template-columns: 1fr;
   }
@@ -358,13 +360,16 @@ details {
     gap: 32px;
   }
 
-  .resume-header h1 {
-    font-size: 28px;
-  }
-
   .role-meta {
     flex-direction: column;
     gap: 2px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* only on really small screens do we shrink the main header */
+  .resume-header h1 {
+    font-size: 28px;
   }
 }
 
@@ -407,8 +412,9 @@ details {
     }
   }
 
+  .download-link,
   h2 button {
-    display: none;
+    display: none !important;
   }
 
   .resume-header {
@@ -440,6 +446,10 @@ details {
   .resume-sidebar {
     order: 1;
     border: 0;
+
+    section {
+      break-inside: avoid;
+    }
   }
 
   .role {
@@ -461,5 +471,3 @@ details {
   }
 
 }
-  /*
-*/

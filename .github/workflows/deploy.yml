@@ -28,6 +28,12 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Generate PDF
+        run: npm run generate-pdf
+      - name: Copy PDF to dist
+        run: cp public/files/john-van-der-loo-resume.pdf dist/files/john-van-der-loo-resume.pdf
       - name: Deploy to Siteground via FTP
         uses: SamKirkland/FTP-Deploy-Action@a51268f67f6605236975928ae28b0f7e9971d50a #v4.3.6
         with:

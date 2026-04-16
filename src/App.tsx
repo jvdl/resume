@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Chevron } from './icons/Chevron';
 import { AtSymbol } from './icons/AtSymbol';
+import { Chevron } from './icons/Chevron';
+import { Download } from './icons/Download';
+import { GitHub } from './icons/GitHub';
 import { LinkedIn } from './icons/LinkedIn';
 import './App.css'
-import { GitHub } from './icons/GitHub';
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
             <li><AtSymbol /><a href="mailto:jvanderloo@gmail.com">jvanderloo@gmail.com</a></li>
             <li><LinkedIn /><a href="https://www.linkedin.com/in/jvanderloo" target="_blank" rel="noreferrer">LinkedIn</a></li>
             <li><GitHub /><a href="https://github.com/jvdl" target="_blank" rel="noreferrer">GitHub</a></li>
+            <li className="download-link"><Download /><a href="./files/john-van-der-loo-resume.pdf" download target="_blank" rel="noreferrer">Download</a></li>
           </ul>
         </header>
 
