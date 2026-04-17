@@ -8,10 +8,10 @@ generate("Generate PDF", async ({ page }) => {
     format: "A4",
     margin: {
       // ensure we add margins to avoid content butting up against the edges of the page
-      top: '100px',
-      bottom: '70px',
-      left: '50px',
-      right: '50px'
-    }
-    });
+      top: "100px",
+      bottom: "70px",
+      left: "50px",
+      right: "50px",
+    },
+  });
 });

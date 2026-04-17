@@ -1,6 +1,5 @@
 import { Icon } from "./Icon";
 
-
 export const LinkedIn = (props: React.SVGProps<SVGSVGElement>) => (
   <Icon name="linkedin" {...props} viewBox="0 0 382 382">
     <path

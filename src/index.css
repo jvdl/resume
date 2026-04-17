@@ -13,9 +13,7 @@
   --accent: #6d571a;
   --accent-bg: rgba(255, 213, 59, 0.1);
   --accent-border: rgba(255, 226, 59, 0.567);
-  --shadow:
-      rgba(0, 0, 0, 0.05) 0 5px 2px -1px,
-      rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --shadow: rgba(0, 0, 0, 0.05) 0 5px 2px -1px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
   --sans: Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
   --heading: var(--sans);
@@ -51,9 +49,7 @@
     --accent: #faa824;
     --accent-bg: rgba(252, 224, 132, 0.15);
     --accent-border: rgba(252, 216, 132, 0.5);
-    --shadow:
-        rgba(0, 0, 0, 0.4) 0 5px 7px -3px,
-        rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --shadow: rgba(0, 0, 0, 0.4) 0 5px 7px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 
   #social .button-icon {
@@ -110,11 +106,12 @@ p {
   margin: 0;
 }
 
-
 a {
   color: var(--accent);
   text-decoration: underline;
-  &:hover { text-decoration: underline; }
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 code,
@@ -144,7 +141,9 @@ button {
   background-color: var(--accent-bg);
   border: 1px solid var(--accent-border);
   box-shadow: var(--shadow);
-  transition: background-color 0.2s, border-color 0.2s;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
 
   &:focus-visible {
     outline: 1px solid var(--accent);

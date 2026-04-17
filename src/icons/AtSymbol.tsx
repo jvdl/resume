@@ -1,6 +1,4 @@
-
 import { Icon } from "./Icon";
-
 
 export const AtSymbol = (props: React.SVGProps<SVGSVGElement>) => (
   <Icon name="at-symbol" {...props}>
