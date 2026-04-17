@@ -142,13 +142,14 @@ function App() {
                   <li>Led frontend development efforts <b>establishing architecture standards</b> and <b>code quality practices</b> that reduced bugs and improved team velocity.</li>
                   <li>Managed greenfield projects and legacy modernization initiatives that improved application performance and reduced technical debt, resulting in faster feature delivery and improved user satisfaction.</li>
               </ul>
+
             </div>
             <div className="role">
               <div className="role-meta">
                 <span className="role-title">Engineering Manager</span>
                 <span className="role-dates">March 2022 — July 2022</span>
               </div>
-              <p className="role-location">Sydney, New South Wales, Australia</p>
+              <p className="role-location">New South Wales, Australia</p>
               <ul>
                 <li>Led the "Customer Journey" team, <b>driving UX and usability improvements</b> across the core application</li>
                 <li>Established and developed the design system with <b>standards, guidelines, and tooling</b> to improve team efficiency</li>

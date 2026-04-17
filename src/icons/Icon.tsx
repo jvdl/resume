@@ -5,7 +5,6 @@ type IconProps = React.SVGProps<SVGSVGElement> & {
    * Will be used to generate a class name for the icon, which can be used to apply specific styles to it.
    */
   name: string;
-
 }
 
 export const Icon = (props: IconProps) => {

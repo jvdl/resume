@@ -204,6 +204,7 @@
 
   .role-location {
     font-size: 12px;
+    font-weight: 300;
     color: var(--text-muted);
     margin: 0 0 8px;
   }
@@ -367,7 +368,7 @@ details {
 }
 
 @media (max-width: 400px) {
-  /* only on really small screens do we shrink the main header */
+  /* only on really small screens do we shrink the main heading */
   .resume-header h1 {
     font-size: 28px;
   }
@@ -404,9 +405,11 @@ details {
     summary {
       padding-left: 0;
     }
+
     .role {
       margin-left: 0 !important;
     }
+
     .summary-icon {
       display: none;
     }
@@ -429,6 +432,7 @@ details {
         color: var(--text-muted);
       }
     }
+
     ul {
       flex-direction: column;
       gap: 8px;
@@ -455,15 +459,15 @@ details {
   .role {
     border: none;
   }
+
+  .role-location {
+    font-weight: initial;
+  }
+
   .job {
-    break-inside: auto;
     li {
       break-inside: avoid-page;
     }
-  }
-  /* allow page break in the first job to avoid having a large gap on the first page */
-  .recent-experience .job:first-of-type {
-    break-inside:initial;
   }
 
   .resume-section.education {
