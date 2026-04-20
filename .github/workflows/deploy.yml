@@ -24,6 +24,11 @@ jobs:
         with:
           cache: "npm"
           cache-dependency-path: package-lock.json
+
+      - name: "Install fontist"
+        uses: fontist/setup-fontist@v2
+      - name: "Install Roboto font"
+        run: fontist install "Roboto"
       - name: Install deps
         run: npm install
       - name: Build
@@ -33,7 +38,8 @@ jobs:
       - name: Generate PDF
         run: npm run generate-pdf
       - name: Copy PDF to dist
-        run: cp public/files/john-van-der-loo-resume.pdf dist/files/john-van-der-loo-resume.pdf
+        run: cp public/files/john-van-der-loo-resume.pdf
+          dist/files/john-van-der-loo-resume.pdf
       - name: Deploy to Siteground via FTP
         uses: SamKirkland/FTP-Deploy-Action@a51268f67f6605236975928ae28b0f7e9971d50a #v4.3.6
         with:
