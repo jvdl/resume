@@ -4,6 +4,7 @@ import { Chevron } from "./icons/Chevron";
 import { Download } from "./icons/Download";
 import { GitHub } from "./icons/GitHub";
 import { LinkedIn } from "./icons/LinkedIn";
+import { Phone } from "./icons/Phone";
 import "./App.css";
 
 function App() {
@@ -11,6 +12,22 @@ function App() {
 
   const toggleAllPreviousExperience = () => {
     setAllOpen((prev) => !prev);
+  };
+
+  const revealPhoneNumber = (
+    event: React.MouseEvent<HTMLAnchorElement> | React.KeyboardEvent<HTMLAnchorElement>,
+  ) => {
+    const target = event.currentTarget;
+    if (target.classList.contains("phone-revealed")) {
+      return;
+    }
+    event.preventDefault();
+
+    const phoneNumber = `${target.getAttribute("data-country")}${target.getAttribute("data-area")}${target.getAttribute("data-value")}`;
+    target.textContent = phoneNumber;
+    target.title = "";
+    target.classList.add("phone-revealed");
+    target.href = `tel:${phoneNumber}`;
   };
 
   return (
@@ -65,6 +82,25 @@ function App() {
               <AtSymbol />
               <a href="mailto:jvanderloo@gmail.com">jvanderloo@gmail.com</a>
             </li>
+            <li className="phone-link">
+              <Phone />
+              <span className="phone-number">
+                <a
+                  href="#"
+                  onClick={revealPhoneNumber}
+                  className="phone-hidden"
+                  data-country="+61"
+                  data-area="425"
+                  data-value="317887"
+                  title="click to reveal"
+                  tabIndex={0}
+                >
+                  <b>00000000000</b>
+                </a>
+              </span>
+            </li>
+          </ul>
+          <ul>
             <li>
               <LinkedIn />
               <a href="https://www.linkedin.com/in/jvanderloo" target="_blank" rel="noreferrer">
@@ -256,6 +292,7 @@ function App() {
                 <span className="role-title">JavaScript Developer</span>
                 <span className="role-dates">August 2013 — July 2021</span>
               </div>
+              <p className="role-location">Sydney, NSW, Australia</p>
               <ul>
                 <li>
                   Primarily worked on Bitbucket Server, building features including diff/source
@@ -294,6 +331,7 @@ function App() {
                   <span className="role-title">Owner</span>
                   <span className="role-dates">January 2005 — December 2016</span>
                 </div>
+                <p className="role-location">New South Wales, Australia</p>
               </summary>
               <div className="role">
                 <ul>
@@ -318,6 +356,7 @@ function App() {
                   <span className="role-title">Senior Frontend Developer</span>
                   <span className="role-dates">March 2012 — August 2013</span>
                 </div>
+                <p className="role-location">Surrey Hills, NSW, Australia</p>
               </summary>
               <div className="role">
                 <ul>
@@ -346,6 +385,7 @@ function App() {
                   <span className="role-title">Team Lead Developer</span>
                   <span className="role-dates">May 2011 — March 2012</span>
                 </div>
+                <p className="role-location">Pyrmont, NSW, Australia</p>
               </summary>
               <div className="role">
                 <ul>
@@ -373,6 +413,7 @@ function App() {
                   <span className="role-title">Front End Developer</span>
                   <span className="role-dates">February 2010 — May 2011</span>
                 </div>
+                <p className="role-location">Pyrmont, NSW, Australia</p>
               </summary>
               <div className="role">
                 <ul>
@@ -400,6 +441,7 @@ function App() {
                   <span className="role-title">Senior Multimedia Programmer</span>
                   <span className="role-dates">March 2007 — February 2010</span>
                 </div>
+                <p className="role-location">Millers Point, NSW, Australia</p>
               </summary>
               <div className="role">
                 <ul>
@@ -431,6 +473,7 @@ function App() {
                   <span className="role-title">Front End Developer</span>
                   <span className="role-dates">December 2006 — March 2007</span>
                 </div>
+                <p className="role-location">Sydney, NSW, Australia</p>
               </summary>
               <div className="role">
                 <ul>

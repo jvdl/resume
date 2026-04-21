@@ -118,7 +118,17 @@
     }
   }
 
-  @container (width < 500px) {
+  .phone-number {
+    color: var(--accent);
+
+    b {
+      filter: blur(4px);
+    }
+  }
+
+
+
+  @container (width < 380px) {
     ul {
       flex-direction: column;
       gap: 8px;
@@ -206,7 +216,7 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--text-muted);
-    margin: 0 0 8px;
+    margin: 0;
   }
 
   ul {
@@ -225,7 +235,8 @@
 }
 
 details {
-  &::details-content {
+  &::details-content,
+  .role-location {
     transition:
       height 200ms ease,
       content-visibility 200ms allow-discrete;
@@ -237,6 +248,10 @@ details {
     opacity: 1;
     height: auto;
     /* overflow: visible; */
+  }
+
+  &[open] .role-location {
+    height: auto;
   }
 
   &[open] .role-meta.secondary {
@@ -424,7 +439,7 @@ details {
     a {
       text-decoration: none;
 
-      &:not([href^="mailto"])::after {
+      &:not([href^="mailto"]):not([href^="tel"]):not([href="#"])::after {
         content: " (" attr(href) ")";
         font-size: 12px;
         color: var(--text-muted);
@@ -434,6 +449,20 @@ details {
     ul {
       flex-direction: column;
       gap: 8px;
+    }
+
+    .phone-hidden:not(.phone-revealed) {
+      position: relative;
+
+      b {
+        visibility: hidden;
+      }
+
+      &::before {
+        content: attr(data-country) attr(data-area)  attr(data-value);
+        position: absolute;
+        left: 0;
+      }
     }
   }
 
