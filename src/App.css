@@ -407,8 +407,12 @@ details {
     --mono: ui-monospace, Consolas, monospace;
   }
 
+  .job .role-meta {
+    gap: 0px;
+  }
+
   details {
-    &::details-content {
+    &::details-content, .role-location {
       display: block !important;
       height: auto !important;
       content-visibility: visible !important;
