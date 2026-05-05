@@ -153,7 +153,7 @@ function App() {
             <div className="role">
               <div className="role-meta">
                 <span className="role-title">Senior Frontend Developer</span>
-                <span className="role-dates">February 2024 — Present</span>
+                <span className="role-dates">February 2024 — May 2026</span>
               </div>
               <p className="role-location">New South Wales, Australia</p>
               <ul>
@@ -299,11 +299,12 @@ function App() {
                   views, pull requests, admin/settings pages, and code editing
                 </li>
                 <li>
-                  Built an in-house tool for <b>code quality enforcement</b>
+                  Built an in-house tool for <b>code quality enforcement</b>, improving code quality
+                  tooling and <b>standards adoption across the organisation</b>.
                 </li>
                 <li>
                   <b>Drove the transition</b> to more modern JS and transformed large parts of the
-                  codebase using <b>jscodeshift</b>
+                  codebase using <b>code transformation</b>
                 </li>
                 <li>
                   Secondment to the <b>Design System</b> team to represent the broader team's
