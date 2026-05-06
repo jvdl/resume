@@ -24,11 +24,6 @@ jobs:
         with:
           cache: "npm"
           cache-dependency-path: package-lock.json
-
-      - name: "Install fontist"
-        uses: fontist/setup-fontist@v2
-      - name: "Install Roboto font"
-        run: fontist install "Roboto"
       - name: Install deps
         run: npm install
       - name: Build
